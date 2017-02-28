@@ -3,6 +3,7 @@ html, body{
  }
  body {
    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+   font-weight: 100;
    color:#1F1309;
  }
 
@@ -43,7 +44,7 @@ html, body{
    text-decoration: none;
  }
  header nav ul > li.btn-outline:hover > a {
-   color:#34495E;
+   color:#845F5A;
  }
 
  header .headline{
@@ -197,6 +198,18 @@ section {
      width: 1170px;
    }
  }
+
+ @media (min-width: 4000px) {
+   .container {
+     width: 3800px;
+   
+   }
+   html {
+      font-size: 150%
+      line-height: 150%
+   }
+}
+
 
 
  
