@@ -1,11 +1,67 @@
 html, body{
    overflow-x: hidden;
-   padding-top: -10px;
-   margin-top: -10px;
  }
  body {
    font-family: "Montserrat", Helvetica, Arial, sans-serif;
    color:#1F1309;
+ }
+
+ /* HEADER */
+
+ header {
+   color:#FFFFFF;
+ }
+
+ header .logo {
+   float: left;
+ }
+
+ header nav {
+   padding:1em 0;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ }
+ header nav ul > li.btn-outline {
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#34495E;
+ }
+
+ header .headline{
+   text-align: center;
+   display:block;
+   text-align: center;
+   padding-bottom: 95px;
+ }
+ header .headline h1 {
+   font-size:48px;
+   font-weight: normal;
+   margin:95px 0 0;
+ }
+ header .headline p {
+   font-size: 22px;
+   line-height: 26px;
+   font-weight: 100;
+   margin:10px 0 40px;
  }
 
  header,
@@ -52,7 +108,7 @@ section {
    margin:0 2% 20px;
  }
  /*IMAGES*/
- .container-hero {
+ .hero {
   vertical-align: top;
   background-image: url("images/brainstorm.png"); 
   background-size: cover;
@@ -83,10 +139,21 @@ section {
   opacity: .35;
 }
 
-.container-hero * {
+.hero * {
     position: relative;
     /* hack */
 }
+
+/* BUTTONS */
+ .btn {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #F9461C;
+   box-shadow: 0 2px 4px 2px rgba(71,19,7,0.90);;
+ }
 
 .container-second-hero {
   vertical-align: top;
@@ -105,3 +172,31 @@ section {
  background-image: url("images/cardboard.png");
  background-repeat: repeat;
  }
+
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+
+ 
