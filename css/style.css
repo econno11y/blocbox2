@@ -376,6 +376,11 @@ section {
    margin-top: 30px;
  }
 
+ .testimonials .second, .fourth{
+   position: relative;
+   top: 20px;
+ }
+
 
 
  @media (min-width: 768px) {
