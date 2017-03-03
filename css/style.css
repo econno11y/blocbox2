@@ -76,9 +76,10 @@ section {
    color: white;
  }
  h2 {
-   font-size:28px;
+   font-size:48px;
    font-weight: normal;
-   margin-bottom: 5px;
+   margin-bottom: 20px;
+   line-height: 1.5em;
  }
  p {
    font-size:16px;
@@ -101,6 +102,7 @@ section {
  .container:after {
    clear: both;
  }
+
  .one-half, .one-third, .one-fourth {
    width:96%;
    float:left;
@@ -140,6 +142,11 @@ section {
   opacity: .35;
 }
 
+ .brown:before {
+ background-color:#7E6233;
+ }
+
+
 .hero * {
     position: relative;
     /* hack */
@@ -167,12 +174,209 @@ section {
  .benefits {
  background-image: url("images/cardboard.png");
  background-repeat: repeat;
+ display:block;
+ position:relative;
+ color: #1F1309;
+ text-align: center; 
+ height: 100%;
+ }
+ 
+ .benefits ul li {
+   list-style-type: none;
+   display: inline-block;
+ }
+ .benefits i {
+   color:#1F1309;
+   font-size:144px;
+   margin:0;
+   border:0;
+   vertical-align: middle;
+   display: block;
+   height: 336px;
+   width: 100%;
+ }
+
+
+ .benefits h2 {
+   color:#1F1309;
+   font-size: 48px;
+   font-weight: bold;
+ }
+
+ .benefits p{
+   font-size: 24px;
+   line-height: 1.5em;
  }
 
  .additional-features {
- background-image: url("images/cardboard.png");
- background-repeat: repeat;
+   background-image: url("images/cardboard.png");
+   background-repeat: repeat;
+   text-align: center;
+   display:block;
+   padding-bottom: 72px;
+   display: table;
+   width: 100%;
  }
+
+.additional-features h1{
+   display: table-cell;
+   vertical-align: center;
+   text-align: center;
+
+}
+
+.additional-features h3{
+    font-family: "Crimson Text", Helvetica, Arial, sans-serif;
+    color: #1F1309;
+    font-size: 36px;
+}
+
+
+.additional-features  ul{
+    color: #1F1309;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 100;
+    list-style: none;
+}
+
+ /* PRICING */
+ .pricing {
+   background: #FFFFFF;
+   padding:4em 0;
+   text-align: center;
+   padding:4em 0;
+ }
+ .pricing h2, .pricing h3, .pricing h4, .pricing p {
+   color:#1F1309;
+   line-height: 0.5em;
+ }
+ .pricing ul {
+   margin:0 auto;
+   padding:2em 0;
+ }
+ .pricing ul li {
+   list-style-type: none;
+ }
+
+ .pricing .container p {
+   line-height: 1.5em;
+ }
+
+ .box{
+   padding:0 0 15px;
+   background: rgba(124,49,70,0.18);
+   border: 1px solid #979797;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   min-height: 439px;
+   position: relative;
+   margin-top: 25px;
+   width: 100%;
+ }
+ .box.middle {
+   border: 1px solid rgba(31,19,8,0.55);
+   box-shadow: 0 2px 0 1px rgba(46,60,65,0.52);
+   background: #FFFFFF;
+   min-height: 485px;
+   margin-top:0px;
+   width: 110%;
+ }
+ .box h3 {
+   font-family: "Crimson Text", Helvetica, Arial, sans-serif;
+   font-weight: 600;
+   font-size:48px;
+ }
+
+.box h4 {
+   font-size:50px;
+   font-weight: normal;
+   margin:40px 0 10px;
+   color:#1F1309;
+   text-transform: uppercase;
+ }
+ .box h4 span {
+   font-size:32px;
+   vertical-align: top;
+ }
+ .box h4 span.month {
+   font-family: "Crimson Text", Helvetica, Arial, sans-serif;
+   font-weight: 100;
+   color:#1F1309;
+   font-size:20px;
+   vertical-align: middle;
+ }
+ .box ul li {
+   font-size:18px;
+   margin-bottom:20px;
+   font-weight: 100;
+ }
+
+ .box .btn {
+   position:absolute;
+   bottom:60px;
+   left:40px;
+   right:40px;
+ }
+ .small {
+   font-size: 12px;
+   color: #FEFEFE;
+   line-height: 15px;
+   font-style:italic;
+ }
+
+
+/* TESTIMONIALS */
+ .testimonials {
+   padding:4em 0;
+   text-align: center;
+ }
+ .testimonials h2 {
+   color:#1F1309;
+ }
+ .testimonials ul li {
+   list-style-type: none;
+ }
+ .testimonials blockquote {
+   color:#FFFFFF;
+   text-align: left;
+   font-style: italic;
+   background:#1F1309;
+   position: relative;
+   padding:30px;
+   width:auto;
+   margin:0;
+ }
+ .testimonials blockquote:after {
+   top: 100%;
+   left: 13%;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-top-color: #1F1309;
+   border-width: 10px;
+   margin-left: -10px;
+ }
+
+ .testimonials img {
+   height: 65px;
+   width: 65px;
+   border-radius:50%;
+   float: left;
+   display: inline-block;
+   margin:20px 10px 0 0;
+ }
+ .testimonials p.name {
+   float: left;
+   display: inline-block;
+   text-align: left;
+   font-size:13px;
+   margin-top: 30px;
+ }
+
+
 
  @media (min-width: 768px) {
    .container {
@@ -187,7 +391,11 @@ section {
      width:46%;
    }
    .one-third {
-     width:29.33333%;
+     width:32.64177%;
+     padding-left:0;
+     padding-right:0;
+     margin-left:0;
+     margin-right:0;
    }
    .one-fourth {
      width:21%;
