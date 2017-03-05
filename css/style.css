@@ -54,7 +54,6 @@ html, body{
    padding-bottom: 95px;
  }
  header .headline h1 {
-   font-size:48px;
    font-weight: normal;
    margin:95px 0 0;
  }
@@ -75,17 +74,38 @@ section {
    font-family: "Crimson Text", Helvetica, Arial, serif;
    color: white;
  }
+
+ h1 {
+   font-size: 72px;
+   font-weight: normal;
+   margin-bottom: 20px;
+   line-height: 1.5em;
+ }
+ 
+
  h2 {
    font-size:48px;
    font-weight: normal;
    margin-bottom: 20px;
    line-height: 1.5em;
+   opacity: .9;
+ }
+
+ h3 {
+   font-size:36px;
+   font-weight: normal;
+   margin-bottom: 20px;
+   line-height: 1.5em;
+   opacity: .9;
  }
  p {
-   font-size:16px;
-   line-height: 19px;
+   font-size: 22px;
+   margin-bottom: 20px;
+   line-height: 1.5em;
    font-weight: 100;
+   opacity: .9;
  }
+
  /* GRID */
  .container {
    margin-right: auto;
@@ -96,7 +116,7 @@ section {
  }
  .container:before,
  .container:after {
-   content: " ";
+   content: "";
    display: table;
  }
  .container:after {
@@ -163,13 +183,8 @@ section {
    box-shadow: 0 2px 4px 2px rgba(71,19,7,0.90);;
  }
 
-.container-second-hero {
-  vertical-align: top;
-  height: 287px;
-  background-image: url("images/Guy-on-grass.png"); 
-  background-size: cover;
-  position: relative;
-}
+
+/*BENEFITS*/
 
  .benefits {
  background-image: url("images/cardboard.png");
@@ -194,35 +209,47 @@ section {
    display: block;
    height: 336px;
    width: 100%;
+   opacity: .7;
  }
 
 
  .benefits h2 {
    color:#1F1309;
-   font-size: 48px;
-   font-weight: bold;
+   opacity: .7;
  }
 
  .benefits p{
    font-size: 24px;
    line-height: 1.5em;
+   opacity: .8;
  }
+
+ /*SECOND HERO*/
+
+ .container-second-hero {
+  vertical-align: top;
+  height: 287px;
+  background-image: url("images/Guy-on-grass.png"); 
+  background-size: cover;
+  position: relative;
+}
+
+/*ADDITIONAL FEATURES*/
 
  .additional-features {
    background-image: url("images/cardboard.png");
    background-repeat: repeat;
    text-align: center;
    display:block;
-   padding-bottom: 72px;
    display: table;
    width: 100%;
  }
 
 .additional-features h1{
    display: table-cell;
-   vertical-align: center;
    text-align: center;
-
+   display:block;
+   padding-top: 90px;
 }
 
 .additional-features h3{
@@ -238,19 +265,23 @@ section {
     line-height: 1.5em;
     font-weight: 100;
     list-style: none;
+    opacity: .9;
 }
+
+
 
  /* PRICING */
  .pricing {
    background: #FFFFFF;
    padding:4em 0;
    text-align: center;
-   padding:4em 0;
  }
+
  .pricing h2, .pricing h3, .pricing h4, .pricing p {
    color:#1F1309;
    line-height: 0.5em;
  }
+
  .pricing ul {
    margin:0 auto;
    padding:2em 0;
@@ -327,12 +358,15 @@ section {
 
 /* TESTIMONIALS */
  .testimonials {
-   padding:4em 0;
+   padding:2em 0;
    text-align: center;
  }
+
+
  .testimonials h2 {
    color:#1F1309;
  }
+
  .testimonials ul li {
    list-style-type: none;
  }
@@ -381,7 +415,67 @@ section {
    top: 20px;
  }
 
+ .CTA {
+   background: #FFFFFF;
+   text-align: center;
+   margin-bottom: 4em;
+ }
 
+
+ /* FOOTER */
+ footer {
+   background-color: #1F1309;
+   background-image: url("images/cardboard.png");
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+    color: #9C4022;
+ }
+
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   text-decoration: none;
+    color: #9C4022;
+ }
+ footer .right-footer-block {
+   background-color: transparent;
+ }
+ footer .logo{
+   padding: -2.35em 0;
+   margin: 0 auto;
+   display: block;
+}
+
+@media (min-width: 992px){
+   footer{
+     background-color: #1F1309;
+     background-image: url("images/cardboard.png");
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #1F1309;
+   }
+
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
+ }
 
  @media (min-width: 768px) {
    .container {
@@ -396,7 +490,7 @@ section {
      width:46%;
    }
    .one-third {
-     width:32.64177%;
+     width:33.333%;
      padding-left:0;
      padding-right:0;
      margin-left:0;
